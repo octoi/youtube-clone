@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:youtube_clone/utils/constants.dart';
+import 'package:youtube_clone/utils/screens.dart';
+import 'package:youtube_clone/wigets/bottom_navigation.dart';
 
 class NavScreen extends StatefulWidget {
   @override
@@ -9,47 +12,25 @@ class _NavScreenState extends State<NavScreen> {
   int _selectScreenIndex = 0;
 
   final _screens = [
-    Scaffold(body: Center(child: Text("Screen 1"))),
-    Scaffold(body: Center(child: Text("Screen 2"))),
-    Scaffold(body: Center(child: Text("Screen 3"))),
-    Scaffold(body: Center(child: Text("Screen 4"))),
-    Scaffold(body: Center(child: Text("Screen 5"))),
+    TempScreen(title: "Home"),
+    TempScreen(title: "Explore"),
+    TempScreen(title: "Add"),
+    TempScreen(title: "Subscription"),
+    TempScreen(title: "Library"),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: appPrimaryColor,
       body: _screens[_selectScreenIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _selectScreenIndex,
-        onTap: (int newIdx) {
+      bottomNavigationBar: AppBottomNavigationBar(
+        onUpdate: (int idx) {
           setState(() {
-            _selectScreenIndex = newIdx;
+            _selectScreenIndex = idx;
           });
         },
-        type: BottomNavigationBarType.fixed,
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home_outlined),
-            label: "Home",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.explore_outlined),
-            label: "Explore",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.add_circle_outline),
-            label: "Add",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.subscriptions_outlined),
-            label: 'Subscription',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.video_library_outlined),
-            label: 'Library',
-          ),
-        ],
+        selectIndex: _selectScreenIndex,
       ),
     );
   }
