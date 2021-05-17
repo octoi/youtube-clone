@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:youtube_clone/utils/constants.dart';
 
@@ -24,14 +26,9 @@ class AppBottomNavigationBar extends StatelessWidget {
           activeIcon: Icon(Icons.home),
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.explore_outlined),
-          label: "Explore",
-          activeIcon: Icon(Icons.explore),
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.add_circle_outline),
-          label: "Add",
-          activeIcon: Icon(Icons.add_circle),
+          icon: Icon(Icons.local_fire_department_outlined),
+          label: "Trending",
+          activeIcon: Icon(Icons.local_fire_department),
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.subscriptions_outlined),
@@ -39,9 +36,14 @@ class AppBottomNavigationBar extends StatelessWidget {
           activeIcon: Icon(Icons.subscriptions),
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.video_library_outlined),
+          icon: Icon(Icons.notifications_outlined),
+          label: "Notifications",
+          activeIcon: Icon(Icons.notifications),
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.folder_outlined),
           label: 'Library',
-          activeIcon: Icon(Icons.video_library),
+          activeIcon: Icon(Icons.folder),
         ),
       ],
     );
