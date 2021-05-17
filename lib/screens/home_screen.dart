@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_clone/utils/constants.dart';
 import 'package:youtube_clone/utils/data.dart';
+import 'package:youtube_clone/widgets/stories.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -26,6 +27,15 @@ class HomeScreen extends StatelessWidget {
             onPressed: () {},
           )
         ],
+      ),
+      body: SingleChildScrollView(
+        child: Container(
+          child: Column(
+            children: [
+              Stories(),
+            ],
+          ),
+        ),
       ),
     );
   }
