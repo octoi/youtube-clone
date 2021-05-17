@@ -8,7 +8,11 @@ class User {
 
 // users
 
-User currentUser = User(name: "test", email: "test@test.com", profile: "test");
+User currentUser = User(
+  name: "test",
+  email: "test@test.com",
+  profile: "https://avatars.githubusercontent.com/u/82007161?s=200&v=4",
+);
 User youtuber = User(
   name: "Rick Astley 🎵",
   email: "rick@roll.com",
