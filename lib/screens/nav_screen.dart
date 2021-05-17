@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:youtube_clone/screens/home_screen.dart';
 import 'package:youtube_clone/utils/constants.dart';
 import 'package:youtube_clone/utils/screens.dart';
 import 'package:youtube_clone/wigets/bottom_navigation.dart';
@@ -12,7 +13,7 @@ class _NavScreenState extends State<NavScreen> {
   int _selectScreenIndex = 0;
 
   final _screens = [
-    TempScreen(title: "Home"),
+    HomeScreen(),
     TempScreen(title: "Explore"),
     TempScreen(title: "Add"),
     TempScreen(title: "Subscription"),
