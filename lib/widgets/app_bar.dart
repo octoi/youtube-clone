@@ -13,14 +13,8 @@ class YoutubAppBar extends StatelessWidget {
         padding: const EdgeInsets.only(left: 12.0),
         child: Image.asset("images/logo.png"),
       ),
-      // leading: Text("Hello"),
       actions: [
-        IconButton(icon: Icon(Icons.cast), onPressed: () {}),
-        IconButton(
-          icon: Icon(Icons.notifications_outlined),
-          iconSize: 30.0,
-          onPressed: () {},
-        ),
+        IconButton(icon: Icon(Icons.videocam), onPressed: () {}),
         IconButton(icon: Icon(Icons.search), iconSize: 30.0, onPressed: () {}),
         IconButton(
           iconSize: 30.0,

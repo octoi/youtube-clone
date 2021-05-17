@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:youtube_clone/screens/home_screen.dart';
 import 'package:youtube_clone/utils/constants.dart';
 import 'package:youtube_clone/utils/screens.dart';
-import 'package:youtube_clone/wigets/bottom_navigation.dart';
+import 'package:youtube_clone/widgets/bottom_navigation.dart';
 
 class NavScreen extends StatefulWidget {
   @override
