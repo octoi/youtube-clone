@@ -17,7 +17,7 @@ User youtuber = User(
   name: "Rick Astley 🎵",
   email: "rick@roll.com",
   profile:
-      "https://yt3.ggpht.com/ytc/AAUvwni36SveDisR-vOAmmklBfJxnnjuRG3ihzfrwEfORA=s88-c-k-c0x00ffffff-no-rj",
+      "https://static.wikia.nocookie.net/youtube/images/c/ce/RickRollButWithADifferentLink.jpg/revision/latest/top-crop/width/360/height/360?cb=20201023192005",
 );
 
 // videos

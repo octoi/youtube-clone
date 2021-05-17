@@ -15,8 +15,8 @@ class _NavScreenState extends State<NavScreen> {
   final _screens = [
     HomeScreen(),
     TempScreen(title: "Explore"),
-    TempScreen(title: "Add"),
-    TempScreen(title: "Subscription"),
+    TempScreen(title: "Subscriptions"),
+    TempScreen(title: "Notifications"),
     TempScreen(title: "Library"),
   ];
 
