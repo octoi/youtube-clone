@@ -58,7 +58,21 @@ class Video extends StatelessWidget {
                         ],
                       ),
                       Row(
-                        children: [],
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Text(
+                            youtubeVideo.creator.name,
+                            style: TextStyle(color: appSecondaryLight),
+                          ),
+                          Text(
+                            " • " + youtubeVideo.views,
+                            style: TextStyle(color: appSecondaryLight),
+                          ),
+                          Text(
+                            " • 11 year ago",
+                            style: TextStyle(color: appSecondaryLight),
+                          ),
+                        ],
                       ),
                     ],
                   ),
