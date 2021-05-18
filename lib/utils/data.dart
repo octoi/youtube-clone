@@ -27,13 +27,22 @@ class YoutubeVideo {
   final String thumbnail;
   final String url;
   final String id;
+  final String title;
 
-  YoutubeVideo({this.creator, this.thumbnail, this.url, this.id});
+  YoutubeVideo({
+    this.creator,
+    this.thumbnail,
+    this.url,
+    this.id,
+    this.title,
+  });
 }
 
 YoutubeVideo ytVideo = YoutubeVideo(
-    creator: youtuber,
-    thumbnail:
-        "https://i.ytimg.com/vi/dQw4w9WgXcQ/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLAfut6ib46TKYWnNm5PxBrcX8HLWg",
-    url: "https://youtu.be/dQw4w9WgXcQ",
-    id: "dQw4w9WgXcQ");
+  creator: youtuber,
+  thumbnail:
+      "https://i.ytimg.com/vi/dQw4w9WgXcQ/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLAfut6ib46TKYWnNm5PxBrcX8HLWg",
+  url: "https://youtu.be/dQw4w9WgXcQ",
+  id: "dQw4w9WgXcQ",
+  title: "Never Gonna Give You Up",
+);
