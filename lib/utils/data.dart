@@ -31,7 +31,7 @@ class YoutubeVideo {
   YoutubeVideo({this.creator, this.thumbnail, this.url, this.id});
 }
 
-YoutubeVideo video = YoutubeVideo(
+YoutubeVideo ytVideo = YoutubeVideo(
     creator: youtuber,
     thumbnail:
         "https://i.ytimg.com/vi/dQw4w9WgXcQ/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLAfut6ib46TKYWnNm5PxBrcX8HLWg",
