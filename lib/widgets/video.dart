@@ -24,7 +24,17 @@ class Video extends StatelessWidget {
             ),
             height: 220.0,
             child: Stack(
-              children: [],
+              children: [
+                Positioned(
+                  bottom: 0,
+                  right: 0,
+                  child: Container(
+                    padding: EdgeInsets.all(5.0),
+                    color: Colors.black,
+                    child: Text("3:33", style: TextStyle(color: Colors.white)),
+                  ),
+                ),
+              ],
             ),
           ),
           Container(
