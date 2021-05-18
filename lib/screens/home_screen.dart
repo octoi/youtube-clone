@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:youtube_clone/utils/constants.dart';
 import 'package:youtube_clone/utils/data.dart';
 import 'package:youtube_clone/widgets/stories.dart';
+import 'package:youtube_clone/widgets/videos.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -30,10 +31,12 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       body: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
         child: Container(
           child: Column(
             children: [
               Stories(),
+              Videos(),
             ],
           ),
         ),
